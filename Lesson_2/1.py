@@ -9,3 +9,62 @@
 Также сообщать пользователю о невозможности деления на ноль,
 если он ввел 0 в качестве делителя.
 """
+
+# Рекурсивно
+
+def recursion():
+    action = input("Введите символ действия ('+', '-', '*', '/') или '0' для выхода: ")
+
+    if action == '0':
+        raise 'Вы вышли'
+
+    else:
+        a = int(input('Введите первое число: '))
+        b = int(input('Введите второе число: '))
+        if action == '+':
+            print('Сумма:', a + b)
+            prog()
+        elif action == '-':
+            print('Разница:', a - b)
+            prog()
+        elif action == '*':
+            print('Произведение:', a * b)
+            prog()
+        elif action == '/':
+            if b == 0:
+                print('Делите на нуль!')
+                prog()
+            else:
+                print('Частное:', a / b)
+                prog()
+        else:
+            print('Введена некорректная команда!')
+            prog()
+
+# Циклично
+def cycle():
+    while True:
+        action = input("Введите символ действия ('+', '-', '*', '/') или '0' для выхода: ")
+
+        if action == '0':
+            raise 'Вы вышли'
+        else:
+            a = int(input('Введите первое число: '))
+            b = int(input('Введите второе число: '))
+        if action == '+':
+            print('Сумма:', a + b)
+        elif action == '-':
+            print('Разница:', a - b)
+        elif action == '*':
+            print('Произведение:', a * b)
+        elif action == '/':
+            if b == 0:
+                print('Делите на нуль!')
+            else:
+                print('Частное:', a / b)
+        else:
+            print('Введена некорректная команда!')
+
+if __name__ == '__main__':
+    # cycle()
+    recursion()
