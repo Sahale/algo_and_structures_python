@@ -7,7 +7,7 @@ import random
 
 
 def searchmin(len):
-    a = [random.randrange(-100, 100, 1) for _ in range(len)]
+    a = [random.randrange(-1000, 1000, 1) for _ in range(len)]
     x2 = 1000
     x1 = min(a)
     for j in range(0, len):
