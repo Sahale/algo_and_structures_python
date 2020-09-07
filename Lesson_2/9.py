@@ -3,6 +3,7 @@
 наибольшее по сумме цифр. Вывести на экран это число и сумму его цифр.
 """
 
+
 def cycle():
     a = int(input('Введите первое число: '))
     a_copy = a
@@ -23,6 +24,7 @@ def cycle():
         print(a_copy, sum_a)
     else:
         print(b_copy, sum_b)
+
 
 def recursion(a, b, a_copy, b_copy, sum_a, sum_b):
         buffer = 0

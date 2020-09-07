@@ -4,6 +4,7 @@
  где n - любое натуральное число.
 """
 
+
 def cycle():
     n = int(input('Введите число: '))
     sum = 0
@@ -12,6 +13,7 @@ def cycle():
         sum += i
         buffer = n * (n + 1) // 2
     print('Все хорошо: sum = {}, buffer = {}'.format(sum, buffer))
+
 
 def recursion(n, sum, buffer, flag):
     if n == 0:

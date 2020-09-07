@@ -13,6 +13,7 @@ def cycle():
         a = a // 10
     print(b)
 
+
 def recursion(a, b):
     if a == 0:
         print(b)
@@ -20,6 +21,7 @@ def recursion(a, b):
         b = b + str(a % 10)
         a = a // 10
         recursion(a, b)
+
 
 if __name__ == '__main__':
     # cycle()

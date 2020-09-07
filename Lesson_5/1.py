@@ -8,9 +8,6 @@
 
 
 import collections
-import os
-import cProfile
-import timeit
 
 
 def diff(com, avg):
